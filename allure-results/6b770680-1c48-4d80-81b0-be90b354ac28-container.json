@@ -1,0 +1,1 @@
+{"uuid":"6b770680-1c48-4d80-81b0-be90b354ac28","name":"org.trello.tests.TaskTest","children":["335b130d-fd83-41b9-aaed-83601fb5948b"],"befores":[{"name":"preCondition","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1762431718789,"stop":1762431722347}],"afters":[],"start":1762431718760,"stop":1762431740754}

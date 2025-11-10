@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Trello suite" parallel="none" thread-count="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Trello">
+        <classes>
+            <class name="org.trello.tests.TaskTest"/>
+        </classes>
+    </test>
+</suite>
