@@ -13,23 +13,23 @@ public class CardPage {
 
     private final SelenideElement cardNameLocator = $(By.xpath("//textarea[@data-testid='card-back-title-input']"));
     private final SelenideElement cardDescriptionLocator = $(By.xpath("//div[@data-testid='description-content-area']//p"));
-    private final SelenideElement closeButton = $(By.xpath("//span[@data-testid='CloseIcon']"));
+    private final SelenideElement closeButton = $(By.xpath("//div[@role='presentation']//span[@data-testid='CloseIcon']"));
 
     @Step("Get card name")
     public String getCardName() {
-        logger.debug("Get card name");
+        logger.info("Get card name");
         return cardNameLocator.getText();
     }
 
     @Step("Get card description")
     public String getCardDescription() {
-        logger.debug("Get card description");
+        logger.info("Get card description");
         return cardDescriptionLocator.getText();
     }
 
     @Step("Close button click")
     public void closeButtonClick() {
-        logger.debug("Close button click");
+        logger.info("Close button click");
         closeButton.click();
     }
 }
